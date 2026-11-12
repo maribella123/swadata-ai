@@ -1,0 +1,29 @@
+# Render Blueprint for the SwaData AI processing service.
+# Secrets (SUPABASE_SERVICE_ROLE_KEY, PROCESSING_SERVICE_TOKEN) are set in the
+# Render dashboard (sync: false) — never committed.
+services:
+  - type: web
+    name: swadata-processing
+    runtime: docker
+    rootDir: services/processing
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: PROCESSING_SERVICE_TOKEN
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: WORKER_ENABLED
+        value: "true"
+      - key: WORKER_POLL_SECONDS
+        value: "5"
+      - key: OCR_LANG
+        value: eng

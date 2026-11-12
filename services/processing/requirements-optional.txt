@@ -1,0 +1,5 @@
+# Optional heavy dependencies (install only where needed)
+# Whisper-compatible transcription (CPU or GPU). Set WHISPER_MODEL to enable.
+faster-whisper==1.1.1
+# Language identification for languages it supports (does not cover siSwati).
+lingua-language-detector==2.1.0

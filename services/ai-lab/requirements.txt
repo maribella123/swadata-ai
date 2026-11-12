@@ -1,0 +1,9 @@
+datasets==3.6.0
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+bitsandbytes==0.45.5 ; platform_system == "Linux"
+torch>=2.3
+sacrebleu==2.5.1
+pandas==2.2.3
+pyarrow==20.0.0

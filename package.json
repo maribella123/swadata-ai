@@ -1,0 +1,16 @@
+{
+  "name": "swadata-ai",
+  "version": "1.0.0",
+  "description": "SwaData AI \u2014 multilingual African language data collection, preservation and AI development platform",
+  "scripts": {
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset",
+    "db:types": "supabase gen types typescript --local > web/src/lib/database.types.ts",
+    "seed:dev": "node scripts/seed-dev.mjs",
+    "test:security": "node --test \"tests/integration/*.test.mjs\""
+  },
+  "devDependencies": {
+    "supabase": "^3.1.0"
+  },
+  "private": true
+}

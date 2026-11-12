@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   SwaData AI design tokens
+   Navy for headings & navigation, emerald/forest for primary actions,
+   warm ivory for feature backgrounds, muted gold for subtle highlights.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-navy-50: #eef3f8;
+  --color-navy-100: #d9e3ee;
+  --color-navy-200: #b3c6d9;
+  --color-navy-300: #829fbd;
+  --color-navy-500: #3d5f80;
+  --color-navy-700: #1b3a57;
+  --color-navy-800: #142f49;
+  --color-navy-900: #102a43;
+  --color-navy-950: #0a1c2e;
+
+  --color-forest-600: #1d8063;
+  --color-forest-700: #176b50;
+  --color-forest-800: #125640;
+  --color-emerald-50: #e9f7f2;
+  --color-emerald-100: #c9ece0;
+  --color-emerald-500: #159b79;
+  --color-emerald-600: #128567;
+
+  --color-ivory: #faf8f1;
+  --color-ivory-200: #f3efe2;
+  --color-gold-100: #f6eedc;
+  --color-gold-400: #d3b06a;
+  --color-gold-500: #c49a45;
+  --color-gold-700: #8f6b25;
+  --color-charcoal: #263238;
+  --color-mist: #f1f3f2;
+  --color-line: #e3e7e5;
+
+  --color-success: #176b50;
+  --color-warning: #a06a12;
+  --color-danger: #b42318;
+  --color-info: #1b4f86;
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-card: 1rem;
+  --shadow-soft: 0 1px 2px rgb(16 42 67 / 0.04), 0 8px 24px -12px rgb(16 42 67 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(16 42 67 / 0.05), 0 18px 40px -18px rgb(16 42 67 / 0.25);
+
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: #ffffff;
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 {
+    color: var(--color-navy-900);
+    letter-spacing: -0.015em;
+  }
+  ::selection {
+    background: var(--color-emerald-100);
+    color: var(--color-navy-900);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-emerald-500);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) { .container-page { padding-inline: 1.5rem; } }
+  @media (min-width: 1024px) { .container-page { padding-inline: 2rem; } }
+
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-forest-700);
+  }
+  .prose-swa { line-height: 1.75; color: var(--color-charcoal); }
+  .prose-swa h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; margin: 2.25rem 0 0.75rem; }
+  .prose-swa h3 { font-size: 1.15rem; font-weight: 700; margin: 1.75rem 0 0.5rem; }
+  .prose-swa p { margin: 0 0 1rem; }
+  .prose-swa ul { list-style: disc; padding-left: 1.25rem; margin: 0 0 1rem; }
+  .prose-swa li { margin: 0.35rem 0; }
+  .prose-swa a { color: var(--color-forest-700); text-decoration: underline; text-underline-offset: 3px; }
+  .prose-swa strong { color: var(--color-navy-900); }
+
+  .gold-rule {
+    display: inline-block;
+    height: 3px;
+    width: 3rem;
+    border-radius: 999px;
+    background: var(--color-gold-500);
+  }
+}
