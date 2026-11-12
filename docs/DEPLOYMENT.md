@@ -32,7 +32,7 @@ Never reuse production keys in staging, and never commit any key.
 5. **Auth → Providers → Email**: enable "Confirm email". **Auth → Policies**: set minimum password length to 8 with letters and digits, matching `supabase/config.toml`.
 6. **Auth → SMTP**: configure a production SMTP provider (Supabase's built-in mailer is rate-limited).
 7. **Database → Backups**: enable Point-in-Time Recovery on production and schedule a regular `pg_dump` to off-site storage. Test a restore every quarter.
-8. Keep the anon key (public) and service-role key (secret) from **Settings → API**.
+8. From **Project Settings → API Keys**, keep the **publishable** key (`sb_publishable_…`, safe for the browser — older projects call it the *anon* key) and the **secret** key (`sb_secret_…`, server-only — older projects call it *service_role*). Either format works everywhere below.
 
 ### First administrator
 
