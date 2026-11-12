@@ -1,4 +1,4 @@
-"""Tokenizer fertility on a SwaData release: lower tokens-per-word generally means less fragmentation."""
+"""Tokenizer fertility on an AfriLang release: lower tokens-per-word generally means less fragmentation."""
 import argparse
 import re
 

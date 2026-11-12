@@ -1,4 +1,4 @@
-# Render Blueprint for the SwaData AI processing service.
+# Render Blueprint for the AfriLang Research processing service.
 # Secrets (SUPABASE_SERVICE_ROLE_KEY, PROCESSING_SERVICE_TOKEN) are set in the
 # Render dashboard (sync: false) — never committed.
 services:

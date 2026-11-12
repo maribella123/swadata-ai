@@ -1,7 +1,7 @@
 {
   "name": "swadata-ai",
   "version": "1.0.0",
-  "description": "SwaData AI \u2014 multilingual African language data collection, preservation and AI development platform",
+  "description": "AfriLang Research \u2014 multilingual African language data collection, preservation and AI development platform",
   "scripts": {
     "db:start": "supabase start",
     "db:reset": "supabase db reset",

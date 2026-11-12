@@ -1,6 +1,6 @@
 # API reference
 
-SwaData AI exposes three surfaces:
+AfriLang Research exposes three surfaces:
 
 1. **Supabase (PostgREST + RPC)**, used by the web app with the user's JWT. Every table is protected by RLS.
 2. **Next.js routes and server actions**, which handle forms, auth and downloads.

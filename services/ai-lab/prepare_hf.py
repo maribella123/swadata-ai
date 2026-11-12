@@ -1,4 +1,4 @@
-"""Convert a SwaData export (JSONL or Parquet) into a Hugging Face DatasetDict."""
+"""Convert an AfriLang export (JSONL or Parquet) into a Hugging Face DatasetDict."""
 import argparse
 
 from datasets import DatasetDict, load_dataset
@@ -6,7 +6,7 @@ from datasets import DatasetDict, load_dataset
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--file", required=True, help="SwaData .jsonl or .parquet export")
+    ap.add_argument("--file", required=True, help="AfriLang .jsonl or .parquet export")
     ap.add_argument("--out", required=True, help="Directory for save_to_disk")
     ap.add_argument("--push", help="Optional private Hub repo id, e.g. org/swadata-ss-mono")
     a = ap.parse_args()

@@ -1,6 +1,6 @@
 # Architecture
 
-SwaData AI is a **modular monolith**: one Next.js application (all portals) plus one
+AfriLang Research is a **modular monolith**: one Next.js application (all portals) plus one
 Python processing service, sharing a single Supabase project. There are no
 microservices beyond the processing service, which exists because document,
 OCR, audio and dataset work needs Python libraries and long-running jobs.

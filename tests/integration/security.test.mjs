@@ -146,14 +146,14 @@ test("only super admins can grant administrator roles", async () => {
 });
 
 test("access requests are limited to researchers; restricted datasets stay closed until approved", async () => {
-  const speech = (await anon.from("datasets").select("id").eq("slug", "swadata-cultural").single()).data.id;
+  const speech = (await anon.from("datasets").select("id").eq("slug", "afrilang-cultural").single()).data.id;
   const notResearcher = await s.contributor.from("dataset_access_requests").insert({ dataset_id: speech, requester_id: s.contributor.uid, institution: "X Uni", purpose: "Twenty characters of purpose text." });
   assert.ok(notResearcher.error);
   assert.equal((await s.researcher.rpc("can_access_dataset", { p_dataset_id: speech })).data, false);
 });
 
 test("admins cannot publish a release they created (four-eyes)", async () => {
-  const ds = (await s.admin.from("datasets").select("id").eq("slug", "swadata-cultural").single()).data;
+  const ds = (await s.admin.from("datasets").select("id").eq("slug", "afrilang-cultural").single()).data;
   const rel = await s.admin.from("dataset_releases").insert({ dataset_id: ds.id, version: `9.${Date.now() % 1000}.0`, language_codes: ["ss"], created_by: s.admin.uid }).select("id").single();
   assert.equal(rel.error, null);
   const r = await s.admin.rpc("approve_release", { p_release_id: rel.data.id });

@@ -25,7 +25,7 @@ export default async function AiLab() {
   return (
     <>
       <PageHeader eyebrow="African Language AI Lab" title="Model registry & experiments" description="Tracks models, training runs and evaluations. Training itself runs outside the web platform (see services/ai-lab) — e.g. tokenizer experiments and LoRA/QLoRA fine-tuning with Hugging Face and PyTorch on GPU infrastructure." />
-      <Alert tone="info" className="mb-6">No model training runs inside SwaData AI. Record runs here after executing them with the scripts in <code>services/ai-lab</code>, so every model is traceable to a published dataset release.</Alert>
+      <Alert tone="info" className="mb-6">No model training runs inside AfriLang Research. Record runs here after executing them with the scripts in <code>services/ai-lab</code>, so every model is traceable to a published dataset release.</Alert>
       <div className="grid gap-6 lg:grid-cols-3">
         <Card className="lg:col-span-2">
           <CardHeader><CardTitle>Models</CardTitle></CardHeader>
@@ -90,7 +90,7 @@ export default async function AiLab() {
           <CardContent>
             <ActionForm action={createEvaluation} success="Evaluation recorded" className="space-y-2">
               <Select name="model_id" required aria-label="Model">{(models ?? []).map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}</Select>
-              <Input name="benchmark_name" placeholder="Benchmark (e.g. SwaData MT v1.0.0)" required aria-label="Benchmark" />
+              <Input name="benchmark_name" placeholder="Benchmark (e.g. AfriLang MT v1.0.0)" required aria-label="Benchmark" />
               <Input name="language_code" placeholder="Language code (e.g. ss)" required aria-label="Language code" />
               <Textarea name="metrics" rows={2} placeholder='{"chrF": 41.2, "BLEU": 12.3}' aria-label="Metrics JSON" className="font-mono text-xs" />
               <Input name="notes" placeholder="Notes" aria-label="Notes" />

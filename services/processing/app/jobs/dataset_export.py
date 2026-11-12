@@ -50,7 +50,7 @@ def datacard(ds: dict, release: dict, count: int) -> dict:
         "provenance": release.get("provenance") or {},
         "statistics": release.get("stats") or {},
         "is_benchmark": ds.get("is_benchmark", False),
-        "citation": f"SwaData AI contributors ({datetime.now(timezone.utc).year}). {ds['name']} v{release['version']}. SwaData AI.",
+        "citation": f"AfriLang Research contributors ({datetime.now(timezone.utc).year}). {ds['name']} v{release['version']}. AfriLang Research.",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "privacy": "Contributor and speaker identities are release-scoped pseudonyms. Do not attempt re-identification.",
     }

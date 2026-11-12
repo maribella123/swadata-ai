@@ -68,7 +68,7 @@ export function TranslationForm({ ctx, sources, initialSourceId }: { ctx: FormCo
             {promptPool.length > 0 && (
               <Button type="button" variant="outline" size="sm" onClick={pickPrompt}><Shuffle /> Give me a sentence to translate</Button>
             )}
-            {sourceId && <p className="text-xs text-forest-700">Translating a SwaData prompt — reviewers can compare all translations of it.</p>}
+            {sourceId && <p className="text-xs text-forest-700">Translating an AfriLang prompt — reviewers can compare all translations of it.</p>}
           </div>
           <div className="flex items-center justify-center">
             <Button type="button" variant="ghost" size="icon" onClick={swap} aria-label="Swap languages"><ArrowRightLeft /></Button>

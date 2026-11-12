@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Create an account" };
 export default function RegisterPage() {
   return (
     <>
-      <h1 className="font-display text-4xl font-semibold">Join SwaData AI</h1>
+      <h1 className="font-display text-4xl font-semibold">Join AfriLang Research</h1>
       <p className="mt-2 text-slate-600">Create a free contributor account. It takes a minute.</p>
       <div className="mt-8"><RegisterForm /></div>
       <p className="mt-8 text-sm text-slate-600">

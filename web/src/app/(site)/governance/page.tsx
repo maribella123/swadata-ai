@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Data governance and licensing" };
 export const dynamic = "force-dynamic";
 
 const PERMISSIONS = [
-  ["Data collection", "Required to submit. Allows SwaData AI to store and review your contribution."],
+  ["Data collection", "Required to submit. Allows AfriLang Research to store and review your contribution."],
   ["Research use", "Allows inclusion in research datasets available to approved researchers."],
   ["Public dataset publication", "Allows inclusion in datasets anyone may download."],
   ["AI model training", "Allows use to train or fine-tune AI models. Required for every dataset release."],

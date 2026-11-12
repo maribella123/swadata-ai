@@ -1,4 +1,4 @@
-"""LoRA / QLoRA fine-tuning of a small causal LM on a SwaData release (run on a GPU machine)."""
+"""LoRA / QLoRA fine-tuning of a small causal LM on an AfriLang release (run on a GPU machine)."""
 import argparse
 
 import torch

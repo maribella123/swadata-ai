@@ -26,7 +26,7 @@ export default async function ResearcherHome({ searchParams }: { searchParams: P
   const published = datasets.filter((d) => d.latest);
   return (
     <>
-      <PageHeader eyebrow="Researcher portal" title="Datasets" description="Search curated SwaData AI datasets, read their documentation, inspect provenance, request restricted access and download permitted exports." />
+      <PageHeader eyebrow="Researcher portal" title="Datasets" description="Search curated AfriLang Research datasets, read their documentation, inspect provenance, request restricted access and download permitted exports." />
       <div className="mb-6 grid gap-4 sm:grid-cols-3">
         <StatCard label="Datasets with releases" value={formatNumber(published.length)} icon={Database} />
         <StatCard label="Records available" value={formatNumber(published.reduce((a, d) => a + (d.latest?.record_count ?? 0), 0))} tone="navy" />

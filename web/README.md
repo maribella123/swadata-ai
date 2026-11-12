@@ -1,4 +1,4 @@
-# SwaData AI — web app
+# AfriLang Research — web app
 
 Next.js 16 application containing the public website and the contributor,
 reviewer, administrator and researcher portals. See the repository

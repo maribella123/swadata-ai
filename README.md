@@ -1,8 +1,8 @@
-# SwaData AI
+# AfriLang Research
 
 **Preserving African Languages. Powering African Intelligence.**
 
-SwaData AI is a multilingual African language data collection, preservation and
+AfriLang Research is a multilingual African language data collection, preservation and
 curation platform. Native speakers, translators, linguists, educators and
 researchers contribute and validate language data — starting with **siSwati** and
 covering all 11 official South African spoken languages, with a registry ready for

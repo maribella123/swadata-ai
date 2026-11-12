@@ -76,7 +76,7 @@ export async function signUp(_prev: AuthState, formData: FormData): Promise<Auth
     return { error: "We couldn't create your account. Please try again." };
   }
   if (data.session) redirect("/portal?welcome=1"); // email confirmation disabled in this environment
-  return { message: "Check your email to confirm your account. The link opens SwaData AI and signs you in.", email: parsed.data.email };
+  return { message: "Check your email to confirm your account. The link opens AfriLang Research and signs you in.", email: parsed.data.email };
 }
 
 export async function resendConfirmation(_prev: AuthState, formData: FormData): Promise<AuthState> {

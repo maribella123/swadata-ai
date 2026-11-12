@@ -22,7 +22,7 @@ from ..db import chunked, get_db
 from ..nlp.text import content_hash, tokenize_words
 from .splitter import assign_splits
 
-BUILDER_VERSION = "swadata-builder/1.0"
+BUILDER_VERSION = "afrilang-builder/1.0"
 
 BASE_SELECT = (
     "id, type, contributor_id, language_id, variety_id, created_at, source_type, is_original, sensitivity, "
@@ -261,7 +261,7 @@ def run_dataset_build(release_id: str) -> dict:
             "provenance": {
                 "builder": BUILDER_VERSION,
                 "built_at": datetime.now(timezone.utc).isoformat(),
-                "source": "SwaData AI contributions (approved layer)",
+                "source": "AfriLang Research contributions (approved layer)",
                 "inclusion_rules": ["status=approved", "research+ai_training consent", "sensitivity!=restricted", "document rights verified", "exact-duplicate removal"],
                 "access_level_at_build": ds["access_level"],
                 "contributions": len(contrib_ids),

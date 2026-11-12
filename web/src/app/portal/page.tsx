@@ -59,7 +59,7 @@ export default async function PortalDashboard({ searchParams }: { searchParams: 
         description="Thank you for helping preserve and advance African languages."
         actions={<Button asChild><Link href="/portal/text"><PenLine /> New contribution</Link></Button>}
       />
-      {sp.welcome && <Alert tone="success" title="Welcome to SwaData AI!" className="mb-6">Your email is verified. Start by adding the languages you speak on your profile, then make your first contribution.</Alert>}
+      {sp.welcome && <Alert tone="success" title="Welcome to AfriLang Research!" className="mb-6">Your email is verified. Start by adding the languages you speak on your profile, then make your first contribution.</Alert>}
       {sp.password && <Alert tone="success" className="mb-6">Your password has been updated.</Alert>}
       {sp.error === "forbidden" && <Alert tone="warning" className="mb-6">You don&apos;t have access to that area. Contact an administrator if you need a different role.</Alert>}
       {(myLangs ?? []).length === 0 && (

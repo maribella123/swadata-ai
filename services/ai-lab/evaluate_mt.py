@@ -1,4 +1,4 @@
-"""chrF and BLEU on a SwaData translation benchmark export (JSONL)."""
+"""chrF and BLEU on an AfriLang translation benchmark export (JSONL)."""
 import argparse
 import json
 

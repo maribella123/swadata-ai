@@ -17,7 +17,7 @@ const COLUMNS = [
       { href: "/research", label: "African language research" },
       { href: "/researcher", label: "Researcher portal" },
       { href: "/governance", label: "Data governance & licensing" },
-      { href: "/about", label: "About SwaData AI" },
+      { href: "/about", label: "About AfriLang Research" },
     ],
   },
   {
@@ -64,7 +64,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-navy-300 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} SwaData AI. Contributions remain governed by each contributor&apos;s recorded permissions.</p>
+          <p>© {new Date().getFullYear()} AfriLang Research. Contributions remain governed by each contributor&apos;s recorded permissions.</p>
           <p>Photography: Unsplash (Unsplash License).</p>
         </div>
       </div>

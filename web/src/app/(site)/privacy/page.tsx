@@ -7,7 +7,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage eyebrow="Privacy policy" title="How we handle personal information" updated="November 2026">
       <p>
-        SwaData AI is designed to support compliance with South Africa&apos;s Protection of Personal Information Act, 2013
+        AfriLang Research is designed to support compliance with South Africa&apos;s Protection of Personal Information Act, 2013
         (POPIA). This policy explains what personal information we process, why, and the rights you have. It should be reviewed
         by qualified legal counsel before production launch.
       </p>

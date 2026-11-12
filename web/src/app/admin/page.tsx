@@ -15,7 +15,7 @@ export default async function AdminOverview() {
   const pending = o.byStatus.filter((s) => s.key === "submitted" || s.key === "in_review").reduce((a, b) => a + b.value, 0);
   return (
     <>
-      <PageHeader eyebrow="Administration" title="Platform overview" description="Live metrics from the SwaData AI database." />
+      <PageHeader eyebrow="Administration" title="Platform overview" description="Live metrics from the AfriLang Research database." />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="Registered contributors" value={formatNumber(o.stats.registered_contributors)} icon={Users} tone="navy" />
         <StatCard label="Awaiting review" value={formatNumber(pending)} icon={Inbox} tone="gold" />

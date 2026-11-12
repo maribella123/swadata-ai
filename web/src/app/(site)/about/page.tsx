@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/site/page-hero";
 import { SectionHeading } from "@/components/site/section-heading";
 
-export const metadata: Metadata = { title: "About", description: "Why SwaData AI exists and the principles that guide it." };
+export const metadata: Metadata = { title: "About", description: "Why AfriLang Research exists and the principles that guide it." };
 
 const PRINCIPLES = [
   { icon: HeartHandshake, title: "Community ownership", body: "Language belongs to its speakers. Contributors decide how their data may be used and can change their permissions at any time." },
@@ -19,9 +19,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About SwaData AI"
+        eyebrow="About AfriLang Research"
         title="African languages, written into the future of technology."
-        description="SwaData AI is a multilingual platform for collecting, digitising, validating and curating African language data — so that African languages are not left behind by artificial intelligence."
+        description="AfriLang Research is a multilingual platform for collecting, digitising, validating and curating African language data — so that African languages are not left behind by artificial intelligence."
         image="/images/students-writing.jpg"
         imageAlt="Young African students writing in exercise books"
       />

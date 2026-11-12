@@ -1,4 +1,4 @@
-"""SwaData AI processing service (FastAPI).
+"""AfriLang Research processing service (FastAPI).
 
 Internal service called by the Next.js server with a shared bearer token.
 It never serves user data directly; results are written to Postgres where
@@ -37,9 +37,9 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="SwaData AI Processing Service",
+    title="AfriLang Research Processing Service",
     version=VERSION,
-    description="Document extraction, OCR, segmentation, deduplication, audio analysis, optional transcription and dataset export for SwaData AI.",
+    description="Document extraction, OCR, segmentation, deduplication, audio analysis, optional transcription and dataset export for AfriLang Research.",
     lifespan=lifespan,
 )
 app.add_middleware(CORSMiddleware, allow_origins=get_settings().cors_origins.split(","), allow_methods=["GET", "POST"], allow_headers=["Authorization", "Content-Type"])
