@@ -19,7 +19,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
         <LoginForm next={sp.next} initialError={sp.error ? ERRORS[sp.error] ?? "Please sign in again." : undefined} verified={sp.verified === "1"} />
       </div>
       <p className="mt-8 text-sm text-slate-600">
-        New to AfriLang Research? <Link href="/register" className="font-semibold text-forest-700 hover:underline">Create an account</Link>
+        New to AfriLang Datasets? <Link href="/register" className="font-semibold text-forest-700 hover:underline">Create an account</Link>
       </p>
     </>
   );

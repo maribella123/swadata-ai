@@ -25,7 +25,7 @@ export default async function DatasetsPage({ searchParams }: { searchParams: Pro
       <PageHero
         eyebrow="Dataset repository"
         title="Open documentation. Responsible access."
-        description="Every AfriLang Research dataset has a public data card describing its contents, licence, methodology and limitations. Downloads respect each contributor's permissions and each dataset's access level."
+        description="Every AfriLang dataset has a public data card describing its contents, licence, methodology and limitations. Downloads respect each contributor's permissions and each dataset's access level."
       />
       <section className="container-page py-12">
         <form className="grid gap-3 rounded-2xl border border-line bg-white p-4 shadow-[var(--shadow-soft)] md:grid-cols-[2fr_1fr_1fr_auto]" role="search">

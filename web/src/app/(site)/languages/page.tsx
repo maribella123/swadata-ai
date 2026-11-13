@@ -3,7 +3,7 @@ import { getLanguages, getLanguageStats } from "@/lib/public-data";
 import { LanguageGrid } from "@/components/site/language-grid";
 import { PageHero } from "@/components/site/page-hero";
 
-export const metadata: Metadata = { title: "Supported languages", description: "Languages supported by AfriLang Research, starting with siSwati." };
+export const metadata: Metadata = { title: "Supported languages", description: "Languages supported by AfriLang Datasets, starting with siSwati." };
 export const dynamic = "force-dynamic";
 
 export default async function LanguagesPage() {

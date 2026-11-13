@@ -19,10 +19,10 @@ export function LogoMark({ className }: { className?: string }) {
 
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
-    <Link href="/" className={cn("group inline-flex items-center gap-2.5", className)} aria-label="AfriLang Research home">
+    <Link href="/" className={cn("group inline-flex items-center gap-2.5", className)} aria-label="AfriLang Datasets home">
       <LogoMark />
       <span className={cn("text-lg font-extrabold tracking-tight", light ? "text-white" : "text-navy-900")}>
-        AfriLang <span className="text-emerald-500">Research</span>
+        AfriLang <span className="text-emerald-500">Datasets</span>
       </span>
     </Link>
   );

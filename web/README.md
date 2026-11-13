@@ -1,4 +1,4 @@
-# AfriLang Research — web app
+# AfriLang Datasets — web app
 
 Next.js 16 application containing the public website and the contributor,
 reviewer, administrator and researcher portals. See the repository

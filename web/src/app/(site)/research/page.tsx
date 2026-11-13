@@ -12,7 +12,7 @@ export default function ResearchPage() {
       <PageHero
         eyebrow="African language research"
         title="Research infrastructure for African language AI."
-        description="AfriLang Research produces documented, versioned, consented datasets and is building the tooling to train and evaluate Small Language Models for African languages."
+        description="AfriLang Datasets produces documented, versioned, consented datasets and is building the tooling to train and evaluate Small Language Models for African languages."
         image="/images/boardroom.jpg"
         imageAlt="A research team meeting in a bright boardroom"
       />

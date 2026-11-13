@@ -9,13 +9,13 @@ const fraunces = Fraunces({ subsets: ["latin", "latin-ext"], variable: "--font-f
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: {
-    default: "AfriLang Research — Preserving African Languages. Powering African Intelligence.",
-    template: "%s · AfriLang Research",
+    default: "AfriLang Datasets — Preserving African Languages. Powering African Intelligence.",
+    template: "%s · AfriLang Datasets",
   },
   description:
     "A multilingual African language data collection and preservation platform. Contribute siSwati and other African language text, speech, translations and cultural knowledge to power African language AI.",
   openGraph: {
-    title: "AfriLang Research",
+    title: "AfriLang Datasets",
     description: "Your language deserves a place in the future of AI.",
     images: ["/images/hero-researchers.jpg"],
     type: "website",

@@ -25,7 +25,7 @@ export default async function AiLab() {
   return (
     <>
       <PageHeader eyebrow="African Language AI Lab" title="Model registry & experiments" description="Tracks models, training runs and evaluations. Training itself runs outside the web platform (see services/ai-lab) — e.g. tokenizer experiments and LoRA/QLoRA fine-tuning with Hugging Face and PyTorch on GPU infrastructure." />
-      <Alert tone="info" className="mb-6">No model training runs inside AfriLang Research. Record runs here after executing them with the scripts in <code>services/ai-lab</code>, so every model is traceable to a published dataset release.</Alert>
+      <Alert tone="info" className="mb-6">No model training runs inside AfriLang Datasets. Record runs here after executing them with the scripts in <code>services/ai-lab</code>, so every model is traceable to a published dataset release.</Alert>
       <div className="grid gap-6 lg:grid-cols-3">
         <Card className="lg:col-span-2">
           <CardHeader><CardTitle>Models</CardTitle></CardHeader>

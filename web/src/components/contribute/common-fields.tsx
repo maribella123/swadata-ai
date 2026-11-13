@@ -199,7 +199,7 @@ export function PermissionsFieldset({
         contributions that allow both research use and AI training.
       </p>
       <div className="grid gap-1 sm:grid-cols-2">
-        <Checkbox id="perm_collection" label="Data collection (required)" description="Store and review this contribution on AfriLang Research." checked disabled />
+        <Checkbox id="perm_collection" label="Data collection (required)" description="Store and review this contribution on AfriLang Datasets." checked disabled />
         <Checkbox id="perm_research" label="Research use" description="Include in datasets for approved researchers." checked={value.allow_research} onChange={toggle("allow_research")} />
         <Checkbox id="perm_ai" label="AI model training" description="Use to train or fine-tune language models." checked={value.allow_ai_training} onChange={toggle("allow_ai_training")} />
         <Checkbox id="perm_public" label="Public dataset publication" description="Include in datasets anyone can download." checked={value.allow_public_release} onChange={toggle("allow_public_release")} />

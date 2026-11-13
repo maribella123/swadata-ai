@@ -120,7 +120,7 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-6 left-4 right-4 rounded-2xl border border-white/60 bg-white/95 p-4 shadow-[var(--shadow-lift)] backdrop-blur sm:left-auto sm:right-6 sm:w-72">
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Live on AfriLang Research</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Live on AfriLang Datasets</p>
               <p className="mt-1 font-display text-3xl font-semibold text-navy-900 tabular-nums">
                 {formatNumber(stats.total_submissions)}
               </p>
@@ -140,7 +140,7 @@ export default async function HomePage() {
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <SectionHeading id="impact" eyebrow="Platform impact" title="Every number here is live." />
             <p className="max-w-sm text-sm text-slate-500">
-              Figures are read directly from the AfriLang Research database and only count reviewer-approved contributions.
+              Figures are read directly from the AfriLang Datasets database and only count reviewer-approved contributions.
               {!ok && " Statistics are temporarily unavailable."}
             </p>
           </div>
